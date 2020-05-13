@@ -7,9 +7,6 @@ class School
   end
 
   def add_student(student, grade)
-    @student = student
-    @grade = grade
-    
     if @roster.keys.include?(grade)
       @roster[grade] << student
     else
@@ -19,7 +16,6 @@ class School
   end
   
   def grade(grade)
-    @grade = grade
     @roster[grade]
   end
 
